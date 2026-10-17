@@ -2360,6 +2360,10 @@ button {
   overflow-wrap: anywhere;
 }
 
+.form-honey {
+  display: none !important;
+}
+
 .form-status:empty {
   display: none;
 }

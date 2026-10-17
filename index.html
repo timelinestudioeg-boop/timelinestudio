@@ -627,14 +627,11 @@
         </div>
 
         <!--
-          CONTACT FORM — FRONT-END ONLY.
-          This form does not send anything on its own. To receive submissions,
-          set FORM_ENDPOINT at the top of js/script.js to a form service URL
-          (e.g. Formspree, Getform, Basin) or your own backend endpoint.
-          Until then, the script validates the form and offers to open the
-          visitor's email app with the inquiry pre-filled.
+          CONTACT FORM — sent via FormSubmit to timelinestudio.eg@gmail.com.
+          The endpoint and the one-time activation step are explained at the
+          top of js/script.js (FORM_ENDPOINT).
         -->
-        <form class="contact-form reveal" id="contact-form" novalidate aria-describedby="form-notice">
+        <form class="contact-form reveal" id="contact-form" novalidate>
           <div class="form-row">
             <div class="form-field">
               <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
@@ -677,10 +674,8 @@
             <p class="field-error" id="details-error" aria-live="polite"></p>
           </div>
 
-          <p class="form-notice" id="form-notice">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
-            <span>Online submission isn't connected yet. Sending will open your email app with your inquiry pre-filled — or write directly to <a href="mailto:timelinestudio.eg@gmail.com">timelinestudio.eg@gmail.com</a>.</span>
-          </p>
+          <!-- Spam trap: hidden from people, bots that fill it are discarded by FormSubmit -->
+          <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <button class="btn btn--primary btn--block" type="submit">
             Send Project Inquiry

@@ -7,14 +7,16 @@
    CONFIGURATION
    --------------------------------------------------------------------------
    FORM_ENDPOINT
-   The contact form is FRONT-END ONLY until this is set. To receive inquiries,
-   paste the POST URL of a form service or your own backend here, e.g.:
-     Formspree: "https://formspree.io/f/your-form-id"
-     Getform:   "https://getform.io/f/your-form-id"
-   The form is sent as FormData with an "Accept: application/json" header,
-   which these services support. Leave it empty to use the email fallback.
+   Inquiries are delivered by FormSubmit (https://formsubmit.co) to the email
+   below — no account or backend needed.
+   ONE-TIME ACTIVATION: the first submission makes FormSubmit email an
+   "Activate Form" link to CONTACT_EMAIL. Click it once; after that every
+   inquiry arrives in that inbox. The activation email also offers a random
+   alias you can paste here instead of the address to keep it out of the code:
+     "https://formsubmit.co/ajax/YOUR_RANDOM_ALIAS"
+   Leave FORM_ENDPOINT empty to fall back to opening the visitor's email app.
    -------------------------------------------------------------------------- */
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/timelinestudio.eg@gmail.com";
 const CONTACT_EMAIL = "timelinestudio.eg@gmail.com";
 const THEME_KEY = "timeline-studio-theme";
 
@@ -474,13 +476,29 @@ function initContactForm() {
   async function sendToEndpoint(data) {
     submitBtn.disabled = true;
     setStatus("", "<p>Sending your inquiry…</p>");
+    // FormSubmit options: "_" fields configure the email, the rest become its rows.
+    const payload = {
+      name: data.get("name"),
+      email: data.get("email"), // FormSubmit uses this as the reply-to address
+      "Project type": data.get("project_type"),
+      "Estimated budget": data.get("budget") || "Not specified",
+      "Project details": data.get("details"),
+      _subject: `New project inquiry — ${data.get("project_type")}`,
+      _template: "table",
+      _honey: data.get("_honey") || "", // spam trap; real visitors leave it empty
+    };
+
     try {
       const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
       });
-      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      const result = await response.json().catch(() => ({}));
+      // FormSubmit reports failures (e.g. form not yet activated) as success: "false"
+      if (!response.ok || String(result.success) === "false") {
+        throw new Error(result.message || `Request failed: ${response.status}`);
+      }
       form.reset();
       attempted = false;
       setStatus("is-success", "<p><strong>Thank you — your inquiry has been sent.</strong> I'll get back to you by email as soon as possible.</p>");
