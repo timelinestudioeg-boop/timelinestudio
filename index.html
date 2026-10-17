@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timeline Studio | Mahmoud Elyan — Video Editor &amp; Motion Designer</title>
+  <meta name="description" content="Timeline Studio by Mahmoud Elyan — freelance Video Editor and Motion Designer in Hurghada, Egypt, creating cinematic real estate videos, commercial ads, social media reels, and motion graphics for clients worldwide.">
+  <meta name="author" content="Mahmoud Elyan">
+  <meta name="theme-color" content="#080F14">
+
+  <!-- Open Graph (add an og:image path once a share image exists, e.g. assets/og-image.jpg) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Timeline Studio | Video Editing & Motion Design">
+  <meta property="og:description" content="Your Vision. Our Creative Timeline. Cinematic video editing and motion design by Mahmoud Elyan, Hurghada, Egypt.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Loaded in <head> (not deferred) so the saved theme is applied before first paint.
+       All DOM-related setup inside the script waits for DOMContentLoaded. -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       HEADER & NAVIGATION
+       ========================================================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <!--
+        TEMPORARY TEXT WORDMARK.
+        This is NOT the official Timeline Studio logo. Replace the contents of
+        this link with the official logo file once available, e.g.:
+        <img src="assets/brand/timeline-studio-logo.svg" alt="Timeline Studio" width="180" height="40">
+      -->
+      <a class="brand" href="#home" aria-label="Timeline Studio — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Timeline<strong>Studio</strong></span>
+          <span class="brand-sub">Hurghada · Video Production</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-cta-item"><a class="btn btn--primary btn--small" href="#contact">Start a Project</a></li>
+        </ul>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-glow hero-glow--teal"></span>
+        <span class="hero-glow hero-glow--blue"></span>
+        <span class="hero-grid"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow reveal">Video Editing · Motion Design · Visual Storytelling</p>
+          <h1 class="hero-title reveal" id="hero-title">
+            <span class="hero-title-line">Your Vision.</span>
+            <span class="hero-title-line text-gradient">Our Creative Timeline.</span>
+          </h1>
+          <div class="hero-text reveal">
+            <p>I'm Mahmoud Elyan, a Video Editor and Motion Designer creating cinematic real estate videos, engaging social media content, commercial visuals, and motion-driven stories for brands and businesses.</p>
+            <p>I combine creative thinking, technical precision, and a client-focused approach to turn ideas into compelling visual experiences.</p>
+          </div>
+          <div class="hero-actions reveal">
+            <a class="btn btn--primary" href="#work">
+              Explore My Work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Start a Project</a>
+          </div>
+          <p class="hero-location reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            Based in Hurghada, Egypt · Working Worldwide
+          </p>
+        </div>
+
+        <!-- Decorative "edit suite" visual: program monitor + timeline -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="viewer">
+            <div class="viewer-bar">
+              <span class="viewer-rec"><span class="rec-dot"></span>Program</span>
+              <span class="viewer-tc" data-timecode>00:00:00:00</span>
+              <span class="viewer-meta">16:9 · 25 fps</span>
+            </div>
+
+            <div class="viewer-screen">
+              <div class="scene">
+                <span class="scene-sun"></span>
+                <span class="scene-sea"></span>
+                <span class="scene-skyline">
+                  <span style="--h: 42%; --w: 9%"></span>
+                  <span style="--h: 64%; --w: 7%"></span>
+                  <span style="--h: 50%; --w: 11%"></span>
+                  <span style="--h: 78%; --w: 8%"></span>
+                  <span style="--h: 36%; --w: 12%"></span>
+                  <span style="--h: 58%; --w: 9%"></span>
+                  <span style="--h: 46%; --w: 10%"></span>
+                </span>
+              </div>
+              <span class="scene-sweep"></span>
+              <span class="safe-guides"></span>
+              <span class="letterbox letterbox--top"></span>
+              <span class="letterbox letterbox--bottom"></span>
+              <span class="viewer-caption">Timeline Studio</span>
+            </div>
+
+            <div class="edit-timeline">
+              <div class="edit-ruler"></div>
+              <div class="edit-track"><span class="edit-track-label">V2</span>
+                <span class="clip clip--motion" style="--start: 14%; --width: 18%"></span>
+                <span class="clip clip--motion" style="--start: 62%; --width: 14%"></span>
+              </div>
+              <div class="edit-track"><span class="edit-track-label">V1</span>
+                <span class="clip clip--video" style="--start: 2%; --width: 30%"></span>
+                <span class="clip clip--video" style="--start: 33%; --width: 22%"></span>
+                <span class="clip clip--video" style="--start: 56%; --width: 26%"></span>
+                <span class="clip clip--video" style="--start: 83%; --width: 15%"></span>
+              </div>
+              <div class="edit-track"><span class="edit-track-label">A1</span>
+                <span class="clip clip--audio" style="--start: 2%; --width: 96%"></span>
+              </div>
+              <div class="playhead-track"><span class="playhead"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-content">
+          <p class="eyebrow reveal"><span class="eyebrow-index">01</span> About Me</p>
+          <h2 class="section-title reveal" id="about-title">Creative Thinking. <span class="text-gradient">Precise Execution.</span></h2>
+          <div class="about-text reveal">
+            <p class="lead">I'm Mahmoud Elyan, a freelance Video Editor and Motion Designer based in Egypt, with 1–2 years of experience working across different video styles and creative projects.</p>
+            <p>My approach starts with understanding the client's vision, audience, and objectives. From there, I shape the footage, pacing, transitions, motion elements, and visual details into a cohesive final piece.</p>
+            <p>I work across real estate videos, commercial advertisements, social media content, speed ramps, transitions, and motion graphics. I also explore AI-assisted tools to animate still images, develop visual transitions, and create additional possibilities for real estate and creative projects.</p>
+            <p>I believe effective video editing is more than assembling shots. It is about communicating an idea, maintaining the viewer's attention, and creating a visual experience that supports the purpose of the project.</p>
+            <p>My goal is to keep improving my craft while building strong, long-term creative partnerships with clients around the world.</p>
+          </div>
+          <dl class="about-facts reveal">
+            <div><dt>Based in</dt><dd>Hurghada, Egypt</dd></div>
+            <div><dt>Experience</dt><dd>1–2 years</dd></div>
+            <div><dt>Work model</dt><dd>Freelance · Project-based</dd></div>
+            <div><dt>Clients</dt><dd>International &amp; local</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SKILLS & TOOLS
+         ========================================================= -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow reveal"><span class="eyebrow-index">02</span> Skills &amp; Tools</p>
+          <h2 class="section-title reveal" id="skills-title">The Tools Behind <span class="text-gradient">the Story</span></h2>
+          <p class="section-intro reveal">A combination of editing expertise, motion design, creative problem-solving, and emerging AI-assisted workflows.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M7 5v14M17 5v14M2 12h20"/></svg>
+              </span>
+              <h3>Video Editing</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag tag--tool">Adobe Premiere Pro</li>
+              <li class="tag">Video Editing &amp; Storytelling</li>
+              <li class="tag">Pacing &amp; Rhythm</li>
+              <li class="tag">Speed Ramps</li>
+              <li class="tag">Seamless Transitions</li>
+              <li class="tag">Social Media Editing</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M3 17c3-8 6-12 9-12s6 4 9 12"/><circle cx="12" cy="5" r="2"/><circle cx="3" cy="17" r="1.5"/><circle cx="21" cy="17" r="1.5"/></svg>
+              </span>
+              <h3>Motion Design</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag tag--tool">Adobe After Effects</li>
+              <li class="tag">Motion Graphics</li>
+              <li class="tag">Logo Animation</li>
+              <li class="tag">Animated Visual Elements</li>
+              <li class="tag">Cinematic Effects</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+              </span>
+              <h3>Real Estate &amp; Commercial Content</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Real Estate Video Editing</li>
+              <li class="tag">Architectural Render-Based Videos</li>
+              <li class="tag">Commercial Advertisements</li>
+              <li class="tag">Brand Videos</li>
+              <li class="tag">Reels &amp; Short-Form Content</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+              </span>
+              <h3>AI-Assisted Creative Tools</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag tag--tool">Kling AI</li>
+              <li class="tag tag--tool">Nano Banana</li>
+              <li class="tag tag--tool">Seedance</li>
+              <li class="tag">AI-Assisted Image Animation</li>
+              <li class="tag">AI-Generated Transitions</li>
+              <li class="tag">Still-Image-to-Video Workflows</li>
+            </ul>
+          </article>
+
+          <article class="skill-card skill-card--wide reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon skill-icon--accent" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z"/></svg>
+              </span>
+              <h3>Creative Strengths</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Client Brief Interpretation</li>
+              <li class="tag">Visual Storytelling</li>
+              <li class="tag">Creative Problem-Solving</li>
+              <li class="tag">Adaptability Across Visual Styles</li>
+              <li class="tag">Continuous Learning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SELECTED WORK
+         ---------------------------------------------------------
+         HOW TO ADD REAL PROJECTS
+         1. Thumbnail: replace the <div class="project-placeholder"> block with
+            <img src="assets/projects/real-estate.jpg" alt="Describe the shot" width="1280" height="720" loading="lazy" decoding="async">
+         2. Video: set data-video-url on the .project-link to a YouTube, Vimeo,
+            or direct .mp4 URL (e.g. data-video-url="YOUR_PROJECT_URL").
+            When a URL is present, the script relabels the link "Watch Video"
+            and plays it in an accessible modal (never autoplays with sound).
+            While it is empty, the link points to #contact as "Request Samples".
+         3. Remove the "Sample coming soon" badge once real media is added.
+         ========================================================= -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-header section-header--split">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-index">03</span> Portfolio</p>
+            <h2 class="section-title reveal" id="work-title">Selected <span class="text-gradient">Work</span></h2>
+          </div>
+          <p class="section-intro reveal">A selection of visual projects exploring cinematic editing, motion, real estate, and digital storytelling.</p>
+        </header>
+
+        <div class="work-grid">
+          <!-- Project 01 -->
+          <article class="project-card project-card--feature reveal">
+            <div class="project-media">
+              <img src="assets/projects/speed-ramps.jpg" alt="Speed Ramps title over a modern apartment interior with an open kitchen and living area" width="1545" height="688" loading="lazy" decoding="async">
+              <span class="media-play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="project-ratio" aria-hidden="true">16:9</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Video Editing · Speed Ramps</p>
+              <h3 class="project-title">Speed Ramps</h3>
+              <p class="project-desc">Dynamic speed ramp edits built around precise keyframing, rhythm-driven pacing, and cinematic motion flow that keeps viewers locked in.</p>
+              <a class="project-link" href="#contact" data-video-url="https://youtu.be/sipOooYQSyk" data-project-title="Speed Ramps">
+                <span class="project-link-label">Request Samples</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card project-card--feature reveal">
+            <div class="project-media">
+              <img src="assets/projects/real-estate-cinematics.jpg" alt="Interview frame from a real estate promo: a resident speaking in a warm, wood-panelled lounge with the one7 residence title on screen" width="1280" height="720" loading="lazy" decoding="async">
+              <span class="media-play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="project-ratio" aria-hidden="true">16:9</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Real Estate · AI-Assisted Visuals</p>
+              <h3 class="project-title">Real Estate Cinematics</h3>
+              <p class="project-desc">Visual storytelling using architectural renders and AI-assisted techniques to animate still imagery, develop transitions, and create more dynamic property presentations.</p>
+              <a class="project-link" href="#contact" data-video-url="https://youtu.be/54cH2s_QisI" data-project-title="Real Estate Cinematics">
+                <span class="project-link-label">Request Samples</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card project-card--vertical reveal">
+            <!-- Vertical (9:16) frame shown uncropped in a 9:16 card -->
+            <div class="project-media project-media--vertical">
+              <img src="assets/projects/social-media-reels.jpg" alt="Frame from a vertical real estate reel: presenter speaking to camera in a sunlit residential courtyard" width="810" height="1440" loading="lazy" decoding="async">
+              <span class="media-play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="project-ratio" aria-hidden="true">9:16</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Short-Form Content</p>
+              <h3 class="project-title">Social Media Reels</h3>
+              <p class="project-desc">Fast-paced social media edits built around rhythm, visual clarity, engaging transitions, and platform-friendly storytelling.</p>
+              <a class="project-link" href="#contact" data-video-url="https://youtube.com/shorts/ZaqmFOm4zRg?feature=share" data-project-title="Social Media Reels">
+                <span class="project-link-label">Request Samples</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card project-card--vertical reveal">
+            <div class="project-media">
+              <img src="assets/projects/social-media-reels-2.jpg" alt="Frame from a vertical resort reel: presenter walking toward the camera past palm trees under a clear blue sky" width="480" height="854" loading="lazy" decoding="async">
+              <span class="media-play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="project-ratio" aria-hidden="true">9:16</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Short-Form Content</p>
+              <h3 class="project-title">Social Media Reels</h3>
+              <p class="project-desc">Vertical edits made for Reels, TikTok, and Shorts, with tight pacing, clear on-screen text, and strong opening hooks that grab attention fast.</p>
+              <a class="project-link" href="#contact" data-video-url="https://youtube.com/shorts/tkS3JTLKn5g?feature=share" data-project-title="Social Media Reels">
+                <span class="project-link-label">Request Samples</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card project-card--vertical reveal">
+            <div class="project-media">
+              <img src="assets/projects/social-media-reels-3.jpg" alt="Frame from a vertical resort reel: presenter walking along a palm-lined path in front of a terracotta hotel, with an animated title on screen" width="810" height="1440" loading="lazy" decoding="async">
+              <span class="media-play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="project-ratio" aria-hidden="true">9:16</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Short-Form Content</p>
+              <h3 class="project-title">Social Media Reels</h3>
+              <p class="project-desc">Scroll-stopping short-form videos that blend quick cuts, smooth transitions, and music-driven timing to deliver a message in seconds.</p>
+              <a class="project-link" href="#contact" data-video-url="https://youtube.com/shorts/9fHiOc6RJoo?feature=share" data-project-title="Social Media Reels">
+                <span class="project-link-label">Request Samples</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="work-note reveal">Full video samples are being prepared for this page. In the meantime, samples relevant to your project are available on request.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EXPERIENCE
+         ========================================================= -->
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-grid">
+        <header class="section-header experience-header">
+          <p class="eyebrow reveal"><span class="eyebrow-index">04</span> Experience</p>
+          <h2 class="section-title reveal" id="experience-title">Experience &amp; <span class="text-gradient">Creative Development</span></h2>
+          <p class="section-intro reveal">Client work, independent projects, and ongoing skill development — each clearly labelled for what it is.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-type timeline-type--client">Client Work</span>
+                <span class="timeline-date">Present · Exact start date to be added</span>
+              </div>
+              <h3 class="timeline-title">Freelance Video Editor &amp; Motion Designer</h3>
+              <p class="timeline-org">Independent / Freelance</p>
+              <ul class="timeline-list">
+                <li>Work on video editing projects for real clients.</li>
+                <li>Adapt editing style and visual direction to individual project requirements.</li>
+                <li>Collaborate with clients to understand briefs and refine creative ideas.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-type timeline-type--project">Independent Projects</span>
+                <span class="timeline-date">Project dates to be added</span>
+              </div>
+              <h3 class="timeline-title">Real Estate &amp; Commercial Video Projects</h3>
+              <p class="timeline-org">Independent Projects</p>
+              <ul class="timeline-list">
+                <li>Edit real estate footage and videos based on architectural renders.</li>
+                <li>Create promotional content for different visual formats.</li>
+                <li>Develop cinematic transitions and motion-driven sequences.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-node timeline-node--accent" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-type timeline-type--learning">Skill Development</span>
+                <span class="timeline-date">Ongoing</span>
+              </div>
+              <h3 class="timeline-title">AI-Assisted Visual Exploration</h3>
+              <p class="timeline-org">Independent Creative Development</p>
+              <ul class="timeline-list">
+                <li>Explore AI tools for image animation and video transitions.</li>
+                <li>Experiment with Kling AI, Nano Banana, and Seedance.</li>
+                <li>Develop new workflows that complement traditional editing and motion design.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES
+         ========================================================= -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <p class="eyebrow reveal"><span class="eyebrow-index">05</span> Services</p>
+          <h2 class="section-title reveal" id="services-title">How I Can <span class="text-gradient">Help</span></h2>
+          <p class="section-intro reveal">Creative video solutions designed around your brand, your audience, and your project's goals.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">01</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></svg>
+            </span>
+            <h3 class="service-title">Video Editing</h3>
+            <p>Professional editing focused on structure, pacing, transitions, visual consistency, and storytelling.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">02</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M3 21h18M6 21V7l6-4 6 4v14"/><path d="M10 10h4M10 14h4M10 18h4"/></svg>
+            </span>
+            <h3 class="service-title">Real Estate Video Editing</h3>
+            <p>Cinematic property videos using real footage and architectural renders to present spaces, details, and atmosphere.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">03</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/><path d="M10.5 8.5v5l4-2.5z"/></svg>
+            </span>
+            <h3 class="service-title">Commercial &amp; Social Media Content</h3>
+            <p>Promotional videos, branded content, and engaging short-form edits tailored to digital platforms.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">04</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 10 10M12 22A10 10 0 0 1 2 12"/><path d="M12 6a6 6 0 0 1 6 6M12 18a6 6 0 0 1-6-6"/></svg>
+            </span>
+            <h3 class="service-title">Motion Graphics &amp; Logo Animation</h3>
+            <p>Motion-driven visuals, animated elements, and logo reveals that add polish and personality to video content.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CREATIVE PROCESS
+         ========================================================= -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow reveal"><span class="eyebrow-index">06</span> Creative Approach</p>
+          <h2 class="section-title reveal" id="process-title">A Process Built Around <span class="text-gradient">Your Vision</span></h2>
+        </header>
+
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="process-num">01</span>
+            <h3 class="process-title">Understand</h3>
+            <p>Review the brief, objectives, target audience, references, and creative direction.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">02</span>
+            <h3 class="process-title">Shape</h3>
+            <p>Organize the footage, establish the visual rhythm, and develop the editing approach.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">03</span>
+            <h3 class="process-title">Refine</h3>
+            <p>Polish transitions, motion elements, timing, and visual details while incorporating feedback.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">04</span>
+            <h3 class="process-title">Deliver</h3>
+            <p>Prepare the final video according to the agreed project requirements and delivery format.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CAREER OBJECTIVE
+         ========================================================= -->
+    <section class="objective" id="objective" aria-labelledby="objective-title">
+      <div class="objective-bg" aria-hidden="true">
+        <span class="objective-glow"></span>
+        <span class="letterbox letterbox--top"></span>
+        <span class="letterbox letterbox--bottom"></span>
+      </div>
+      <div class="container objective-inner">
+        <p class="eyebrow reveal"><span class="eyebrow-index">07</span> Career Objective</p>
+        <h2 class="visually-hidden" id="objective-title">Career Objective</h2>
+        <blockquote class="objective-quote reveal">
+          <p class="objective-statement">My goal is to grow as a versatile Video Editor and Motion Designer, collaborate with ambitious international brands and creative teams, and produce visual content that <span class="text-gradient">communicates ideas clearly and leaves a lasting impression.</span></p>
+          <p class="objective-support">I'm committed to continuously improving my editing and motion design skills, exploring emerging creative tools, and building long-term professional relationships through thoughtful, reliable, and high-quality work.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal"><span class="eyebrow-index">08</span> Contact</p>
+          <h2 class="section-title reveal" id="contact-title">Let's Create <span class="text-gradient">Something Great.</span></h2>
+          <p class="section-intro reveal">Have a project in mind? Tell me what you're working on, and let's explore how we can bring your vision to life.</p>
+
+          <ul class="contact-details reveal">
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:timelinestudio.eg@gmail.com">timelinestudio.eg@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.3-2.3l.8-1-1-2z"/></svg></span>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/201123988588" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp: +20 112 398 8588">+20 112 398 8588</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+              <div>
+                <span class="contact-label">Pricing</span>
+                <span>Project-based, depending on scope and requirements.</span>
+              </div>
+            </li>
+          </ul>
+
+          <!--
+            SOCIAL LINKS — to add another profile, copy a <li> below. A link whose
+            href is a YOUR_..._URL placeholder is automatically disabled by
+            js/script.js (shown as "Soon") so visitors never hit a broken page.
+          -->
+          <div class="social reveal">
+            <p class="contact-label" id="social-label">Find me online</p>
+            <ul class="social-list" aria-labelledby="social-label">
+              <li><a class="social-link" href="https://www.linkedin.com/in/mahmoud-elyan-271016423" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a class="social-link" href="https://www.instagram.com/elyanxx0/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--
+          CONTACT FORM — FRONT-END ONLY.
+          This form does not send anything on its own. To receive submissions,
+          set FORM_ENDPOINT at the top of js/script.js to a form service URL
+          (e.g. Formspree, Getform, Basin) or your own backend endpoint.
+          Until then, the script validates the form and offers to open the
+          visitor's email app with the inquiry pre-filled.
+        -->
+        <form class="contact-form reveal" id="contact-form" novalidate aria-describedby="form-notice">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name">
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="project-type">Project type <span class="req" aria-hidden="true">*</span></label>
+              <div class="select-wrap">
+                <select id="project-type" name="project_type" required>
+                  <option value="" selected disabled>Select a project type</option>
+                  <option>Video Editing</option>
+                  <option>Real Estate Video</option>
+                  <option>Commercial / Brand Video</option>
+                  <option>Social Media Content</option>
+                  <option>Motion Graphics / Logo Animation</option>
+                  <option>AI-Assisted Visuals</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <p class="field-error" id="project-type-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="budget">Estimated budget <span class="optional">(optional)</span></label>
+              <input id="budget" name="budget" type="text" placeholder="e.g. USD 300–500">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="details">Project details <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="details" name="details" rows="5" required placeholder="Tell me about the project, deliverables, timeline, and any references."></textarea>
+            <p class="field-error" id="details-error" aria-live="polite"></p>
+          </div>
+
+          <p class="form-notice" id="form-notice">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+            <span>Online submission isn't connected yet. Sending will open your email app with your inquiry pre-filled — or write directly to <a href="mailto:timelinestudio.eg@gmail.com">timelinestudio.eg@gmail.com</a>.</span>
+          </p>
+
+          <button class="btn btn--primary btn--block" type="submit">
+            Send Project Inquiry
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+          </button>
+
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <!-- Temporary text wordmark — replace with the official logo when available. -->
+        <a class="brand" href="#home" aria-label="Timeline Studio — back to top">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-text"><span class="brand-name">Timeline<strong>Studio</strong></span></span>
+        </a>
+        <p class="footer-desc">Video Editing · Motion Design · Visual Storytelling</p>
+      </div>
+      <p class="footer-tagline">Your Vision. <span class="text-gradient">Our Creative Timeline.</span></p>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Timeline Studio · Mahmoud Elyan. All rights reserved.</p>
+        <a class="back-to-top" href="#home">
+          Back to top
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video modal — only used once real video URLs are set on project links -->
+  <dialog class="video-modal" id="video-modal" aria-labelledby="video-modal-title">
+    <div class="video-modal-inner">
+      <div class="video-modal-head">
+        <h2 class="video-modal-title" id="video-modal-title">Project video</h2>
+        <button class="video-modal-close" type="button" aria-label="Close video">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="video-frame"></div>
+    </div>
+  </dialog>
+</body>
+</html>
